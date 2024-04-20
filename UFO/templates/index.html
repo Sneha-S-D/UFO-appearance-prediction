@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFO Country Prediction</title>
+    <style>
+        body {
+            background-image: url(https://i.pinimg.com/564x/40/25/13/4025136fff730f7f65df360d400dc479.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            font-size: 30px;
+        }
+        h1{
+            margin-top: 100px;
+            text-align: center;
+        }
+        .labels {
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 300px; 
+            padding: 10px; 
+            font-size: 20px; 
+            border-radius: 25px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px; 
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>UFO Country Prediction</h1>
+    <form action="/predict" method="post" class="labels">
+        <label for="seconds">Enter Seconds:</label><br>
+        <input type="number" id="seconds" name="seconds" required><br>
+        <label for="latitude">Enter the Latitude:</label><br>
+        <input type="number" id="latitude" name="latitude" required><br>
+        <label for="longitude">Enter the Longitude:</label><br>
+        <input type="number" id="longitude" name="longitude" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
